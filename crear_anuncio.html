@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publicar Anuncio</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h2>Publicar anuncio</h2>
+		<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+			<input type="text" id="titulo" name="titulo" placeholder="Título del Anuncio" required>
+			<textarea id="descripcion" name="descripcion" placeholder="Descripción del artículo" rows="4" required></textarea>
+			<input type="number" id="precio" name="precio" placeholder="Precio del articulo" required>
+			<select id="categoria" name="categoria" required>
+				<option value="electronica">Electrónica</option>
+				<option value="hogar">Hogar</option>
+				<option value="vehiculos">Vehículos</option>
+				<option value="ropa">Ropa</option>
+				<option value="deportes">Deportes</option>
+				<option value="otros">Otros</option>
+			</select>
+			<input type="file" id="imagen" name="imagen" required>
+			<button type="submit">Publicar anuncio :)</button>
+		</form>
+	</div>
+	<ul>
+		<li>Ingresa un título para tu anuncio en el campo "Título del Anuncio".</li>
+		<li>Escribe una descripción detallada de tu artículo en el campo "Descripción del artículo". </li>
+		<li>Indica el precio de tu artículo en el campo "Precio del artículo".</li>
+		<li>Selecciona la categoría a la que pertenece tu artículo en el menú desplegable "Categoría". </li>
+		<li>Adjunta una imagen de tu artículo haciendo clic en el botón "Seleccionar archivo".</li>
+		<li>Una vez completados todos los campos, haz clic en el botón verde de "Publicar anuncio".</li>
+	</ul>
+</body>
+</html>
